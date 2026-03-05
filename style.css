@@ -1,0 +1,159 @@
+/*-----------------------------------*\
+  #CONTACT & FORM STYLING
+\*-----------------------------------*/
+
+.mapbox {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid var(--jet);
+  overflow: hidden;
+  filter: grayscale(1) contrast(1.2); /* Premium Map Look */
+  transition: var(--transition-1);
+}
+
+.mapbox:hover { filter: grayscale(0.5) contrast(1); }
+
+.mapbox iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: invert(90%) hue-rotate(180deg); /* Dark Mode Map Hack */
+}
+
+.contact-form { margin-bottom: 10px; }
+.form-title { margin-bottom: 20px; }
+
+.input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.form-input {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  padding: 13px 20px;
+  background: var(--eerie-black-1);
+  border: 1px solid var(--jet);
+  border-radius: 14px;
+  outline: none;
+  transition: var(--transition-1);
+}
+
+.form-input::placeholder { color: var(--light-gray-70); }
+
+.form-input:focus { 
+  border-color: var(--orange-yellow-crayola);
+  box-shadow: 0 0 10px hsla(45, 100%, 72%, 0.1);
+}
+
+textarea.form-input {
+  min-height: 100px;
+  height: 120px;
+  max-height: 200px;
+  resize: vertical;
+  margin-bottom: 25px;
+}
+
+/* OSCAR WINNING BUTTON */
+.form-btn {
+  position: relative;
+  width: 100%;
+  background: var(--text-gradient-yellow); /* Primary brand color */
+  color: var(--smoky-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.form-btn::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--text-gradient-yellow);
+  border-radius: inherit;
+  filter: brightness(1.1);
+  z-index: -1;
+  opacity: 0;
+  transition: var(--transition-1);
+}
+
+.form-btn:hover { transform: scale(1.02); }
+.form-btn:hover::before { opacity: 1; }
+
+.form-btn:disabled {
+  opacity: 0.5;
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+/*-----------------------------------*\
+  #ULTRA-RESPONSIVE ADAPTATIONS
+\*-----------------------------------*/
+
+/* Standard Mobile/Tablet logic... (as provided in your source) */
+
+@media (min-width: 1024px) {
+  /* Desktop Premium View */
+  .sidebar, article {
+    width: 950px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+  }
+
+  /* Top-Right Floating Navbar */
+  .navbar {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 20px;
+    background: var(--onyx);
+    border-left: 1px solid var(--jet);
+    border-bottom: 1px solid var(--jet);
+  }
+}
+
+/* LARGE SCREEN MASTER LAYOUT */
+@media (min-width: 1250px) {
+  main {
+    max-width: 1200px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 60px;
+    height: fit-content;
+    min-width: 300px;
+  }
+
+  /* Custom Scrollbar for 2026 High-End Feel */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--smoky-black); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--jet);
+    border-radius: 10px;
+    border: 2px solid var(--smoky-black);
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--orange-yellow-crayola); }
+}
