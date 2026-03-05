@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nir Kunwar | Mrtechnician - Digital Creator & Founder</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Nirdeshan Kunwar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Nirdeshan Kunwar">Nir Kunwar</h1>
+          <p class="title">Digital Creator & Founder of Mrtechnician</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:nkdigitalservices666@gmail.com" class="contact-link">nkdigitalservices666@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+9779804650880" class="contact-link">+977 980 4650880</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2006-12-05">December 05, 2006</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Kathmandu, Nepal</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+          <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a dedicated Digital Creator and the visionary behind <strong>Mrtechnician</strong>. Based in Kathmandu, Nepal, I specialize in crafting high-impact visual storytelling and technical digital solutions. I help brands and creators dominate their space through viral YouTube thumbnails, cinematic video editing, and modern web architectures.
+          </p>
+          <p>
+            At <strong>NK Digital Services</strong>, my mission is to build digital products that are not just functional, but visually arresting. I add a personal, professional touch to every project, ensuring your identity is communicated in the most creative way possible.
+          </p>
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title">What I'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box"><img src="./assets/images/icon-dev.svg" alt="web dev" width="40"></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+                <p class="service-item-text">High-quality, responsive site development tailored for the modern web.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><img src="./assets/images/icon-design.svg" alt="thumbnail" width="40"></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">YouTube Growth</h4>
+                <p class="service-item-text">Psychology-driven, high-CTR thumbnails and channel assets for creators.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><img src="./assets/images/icon-video.svg" alt="video" width="40"></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Editing</h4>
+                <p class="service-item-text">Cinematic post-production for YouTube, social media, and professional branding.</p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box"><img src="./assets/images/icon-app.svg" alt="branding" width="40"></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Brand Identity</h4>
+                <p class="service-item-text">Unique logos, professional biographies, and cohesive visual identities.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="resume" data-page="resume">
+        <header><h2 class="h2 article-title">Resume</h2></header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Digital Media & CS Studies</h4>
+              <span>2021 — 2024</span>
+              <p class="timeline-text">Focusing on modern UI/UX principles and technical creative workflows.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Thumbnail Design</h5><data value="95">95%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 95%;"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Video Editing</h5><data value="90">90%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 90%;"></div></div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper"><h5 class="h5">Web Development</h5><data value="85">85%</data></div>
+              <div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 85%;"></div></div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="portfolio" data-page="portfolio">
+        <header><h2 class="h2 article-title">Portfolio</h2></header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Web Design</button></li>
+            <li class="filter-item"><button data-filter-btn>YouTube Assets</button></li>
+            <li class="filter-item"><button data-filter-btn>Video Editing</button></li>
+          </ul>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="web design">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/project-1.jpg" alt="Mrtechnician Official Site" loading="lazy">
+                </figure>
+                <h3 class="project-title">Mrtechnician Hub</h3>
+                <p class="project-category">Web Design</p>
+              </a>
+            </li>
+            </ul>
+        </section>
+      </article>
+
+      <article class="contact" data-page="contact">
+        <header><h2 class="h2 article-title">Contact</h2></header>
+
+        <section class="mapbox">
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113032.29658253102!2d85.25609323714571!3d27.708677000854497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1707823521251!5m2!1sen!2snp" width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Get in Touch</h3>
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon><span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+
+    </div>
+
+  </main>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
