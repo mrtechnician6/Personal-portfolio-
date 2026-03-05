@@ -1,0 +1,184 @@
+/*-----------------------------------*\
+  #MRTECHNICIAN - PREMIUM STYLESHEET 2026
+\*-----------------------------------*/
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+:root {
+
+  /**
+   * COLORS - "The Obsidian & Gold Suite"
+   */
+
+  /* Backgrounds */
+  --smoky-black: hsl(0, 0%, 7%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(30, 30, 32, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  /* Accents (Mrtechnician Signature Gold) */
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  
+  /* Typography */
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+
+  /**
+   * GRADIENTS
+   */
+  --bg-gradient-onyx: linear-gradient(145deg, hsl(240, 1%, 25%) 0%, hsl(240, 1%, 15%) 100%);
+  --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 1) 0%, hsla(240, 1%, 13%, 1) 100%);
+
+  /**
+   * TYPOGRAPHY
+   */
+  --ff-poppins: 'Poppins', sans-serif;
+  --fs-1: 24px; --fs-2: 18px; --fs-3: 17px; --fs-4: 16px; --fs-6: 15px;
+  --fw-300: 300; --fw-400: 400; --fw-500: 500; --fw-600: 600;
+
+  /**
+   * SHADOWS & TRANSITIONS
+   */
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.4);
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease-in-out;
+
+}
+
+/*-----------------------------------*\
+  #RESET & BASE
+\*-----------------------------------*/
+
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+li { list-style: none; }
+a { text-decoration: none; color: inherit; }
+button { font: inherit; background: none; border: none; cursor: pointer; }
+img, ion-icon, data, time, span { display: block; }
+
+html { font-family: var(--ff-poppins); scroll-behavior: smooth; }
+
+body {
+  background: var(--smoky-black);
+  color: var(--white-2);
+  padding: 15px;
+  line-height: 1.6;
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.sidebar, article {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.article-title {
+  position: relative;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+}
+
+.article-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 30px; height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+
+/*-----------------------------------*\
+  #SIDEBAR
+\*-----------------------------------*/
+
+.sidebar { margin-bottom: 15px; max-height: 112px; overflow: hidden; transition: var(--transition-2); }
+.sidebar.active { max-height: 1000px; }
+
+.sidebar-info { display: flex; align-items: center; gap: 15px; }
+
+.avatar-box {
+  background: var(--bg-gradient-onyx);
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.info_more-btn {
+  position: absolute; top: 0; right: 0;
+  padding: 10px; border-radius: 0 20px;
+  font-size: 13px; color: var(--orange-yellow-crayola);
+  background: var(--bg-gradient-jet);
+  box-shadow: var(--shadow-1);
+}
+
+/*-----------------------------------*\
+  #SKILLS & PROGRESS
+\*-----------------------------------*/
+
+.skill-progress-bg {
+  background: var(--jet);
+  height: 8px; border-radius: 10px;
+}
+
+.skill-progress-fill {
+  background: var(--text-gradient-yellow);
+  height: 100%; border-radius: inherit;
+}
+
+/*-----------------------------------*\
+  #CONTACT FORM
+\*-----------------------------------*/
+
+.form-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--jet);
+  border-radius: 12px;
+  padding: 13px 20px;
+  color: var(--white-2);
+  outline: none;
+  transition: var(--transition-1);
+}
+
+.form-input:focus { border-color: var(--orange-yellow-crayola); }
+
+.form-btn {
+  width: 100%;
+  background: var(--bg-gradient-jet);
+  color: var(--orange-yellow-crayola);
+  padding: 15px; border-radius: 14px;
+  display: flex; justify-content: center; align-items: center; gap: 10px;
+  font-weight: var(--fw-600);
+  border: 1px solid var(--jet);
+}
+
+.form-btn:hover { background: var(--text-gradient-yellow); color: var(--smoky-black); }
+
+/*-----------------------------------*\
+  #RESPONSIVE (Large Screens)
+\*-----------------------------------*/
+
+@media (min-width: 1250px) {
+  main { display: flex; max-width: 1200px; margin: auto; gap: 25px; }
+  .main-content { min-width: 75%; }
+  .sidebar { position: sticky; top: 60px; max-height: max-content; }
+}
